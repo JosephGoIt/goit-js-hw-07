@@ -1,5 +1,5 @@
 import { galleryItems } from './gallery-items.js';
-// import * as basicLightbox from 'basiclightbox';
+import * as basicLightbox from 'basiclightbox';
 
 // Create gallery markup
 const gallery = document.querySelector('.gallery');
@@ -28,8 +28,8 @@ galleryItems.forEach(item => {
 
    if (event.target.classList.contains('gallery__image')) {
      const imageUrl = event.target.dataset.source;
-    //  const instance = basicLightbox.create(`<img src="${imageUrl}" alt="Image">`);
-    //  instance.show();
+      const instance = basicLightbox.create(`<img src="${imageUrl}" alt="Image">`);
+      instance.show();
    }
  });
 
