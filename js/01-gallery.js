@@ -23,14 +23,14 @@ galleryItems.forEach(item => {
   });
 
 // Event delegation to open modal
-gallery.addEventListener('click', event => {
-  event.preventDefault(); // Prevent default behavior of anchor tag
+ gallery.addEventListener('click', event => {
+   event.preventDefault(); // Prevent default behavior of anchor tag
 
-  if (event.target.classList.contains('gallery__image')) {
-    const imageUrl = event.target.dataset.source;
-    const instance = basicLightbox.create(`<img src="${imageUrl}" alt="Image">`);
-    instance.show();
-  }
-});
+   if (event.target.classList.contains('gallery__image')) {
+     const imageUrl = event.target.dataset.source;
+      const instance = basicLightbox.create(`<img src="${imageUrl}" alt="Image">`);
+      instance.show();
+   }
+ });
 
 console.log(galleryItems);
