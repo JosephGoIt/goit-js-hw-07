@@ -1,5 +1,7 @@
-import { galleryItems } from './gallery-items.js';
 import * as basicLightbox from 'basiclightbox';
+
+import { galleryItems } from './gallery-items.js';
+
 
 // Create gallery markup
 const gallery = document.querySelector('.gallery');
