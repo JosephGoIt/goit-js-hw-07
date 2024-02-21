@@ -1,14 +1,10 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
-
 console.log(galleryItems);
-
 const gallery = document.querySelector('.gallery');
-
 galleryItems.forEach(item => {
   const listItem = document.createElement('li');
   listItem.classList.add('gallery__item');
-
   listItem.innerHTML = `
     <a class="gallery__link" href="${item.original}">
       <img
@@ -18,7 +14,6 @@ galleryItems.forEach(item => {
       />
     </a>
   `;
-
   gallery.appendChild(listItem);
 });
 
